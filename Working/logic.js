@@ -8,9 +8,9 @@ d3.csv("player_list.csv", function(error, data) {
       .enter()
       .append("option")
       .attr("value", function (d) {
-        return d.Player_Name;
+        return d.full_name;
       })
-      .text(function (d) { return d.Player_Name; });
+      .text(function (d) { return d.full_name; });
 });
 
 d3.csv("seasons.csv", function(error, data) {
